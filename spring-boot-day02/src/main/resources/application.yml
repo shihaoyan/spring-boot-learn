@@ -1,0 +1,35 @@
+logging:
+  level: {
+      com.shy.springboot: debug,
+      org: info,
+      org.springframework.boot.web.embedded: info,
+      org.apache.catalina.core: info,
+      org.springframework.boot.web.servlet: info,
+      org.springframework.web.servlet.mvc.method.annotation: info
+  }
+spring:
+  http:
+    encoding:
+      force-response: true
+  thymeleaf:
+    cache: false
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.0.133:3306/springboot_cache
+    #driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+  redis:
+    host: 192.168.0.133
+    port: 6379
+
+server:
+  port: 8080
+
+
+
+
+
+

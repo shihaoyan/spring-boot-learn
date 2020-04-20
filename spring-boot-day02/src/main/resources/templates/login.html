@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+测试手动映射
+<br>
+<form action="/login" method="post" enctype="multipart/form-data">
+    <div th:text="${user.getUsername()}">这是显示欢迎信息</div>
+</form>
+</body>
+</html>
